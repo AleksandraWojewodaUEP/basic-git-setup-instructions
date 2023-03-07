@@ -160,14 +160,60 @@ git --version
 Oczekiwanym rezulattem jest informacja o wersji oporgramowania Git na danej maszynie
 (podobnie jak dla Linuxa).
 
-## Podsumowanie
+### Podsumowanie
 
 Więcej dostępnych informacji o pobieraniu Gita jest dostępnych na oficjalnej 
 [stronie internetowej Gita](https://git-scm.com/downloads).
 
+## Konfigracji Gita lokalnie
+
+Dla wszystkich systemów operacyjnych operacja ta powinna wyglądać tak samo.
+W Windowsie wybieramy `Git BASH`. W Linuxie/Macu terminal.
+
+Ustawienie nazwy i maila użytkownika:
+
+```
+git config --global user.name "Imię Nazwisko"
+git config --global user.email "niu@ue.poznan.pl"
+```
+
+W odpowiednich miejscach wpisz swoje dane. Przełącznik `--global` nie jest wymagany, 
+szczególnie w przypadku wykorzystywania jednej maszyny dla wielu użyrkoników Gita.
+Przykładowo użytkownik uczelniany, prywatny i służbowy.
+Można stworzyć konfigurację, która zezwala na odseparowanie od siebie kont Gitowych[^2].
+
+W przypadku ewentualnego błędu/literówki polecenie można wykonac ponownie.
+
+> **_Tip:_**  Będąc w terminalu (lub emulatorze terminala) strzałka w górę pozwala na przywołanie komend.
+Szczególnie przydatne jeśli chcemy danej komendy użyć dwa razy lub komendy są od siebie nieznacznie róźne, 
+więc "nie opłaca" się jej przepisywać. 
+
+![Alt text](/imgs/git_config_1.png)
+
+Aby sprawdzić wprowadzone dane można w katalogu użytkownika sprawdzić plik `.gitconfig`.
+
+**Uwaga! Następujące komendy są uniksowe, więc mogą nie działać dla Git CMD, ale będą dla Git BASH**
+W terminalu wpisz `pwd`. Komenda ta wyświetla ścieżkę dostępu do bieżącego katalogu. 
+Dla Windowsa powinna być `/c/User/<nazwa użytkownika>` dla Linuxa `/home/<nazwa użytkownika>`.
+Jeśli nie jesteś w tym katalogu komenda `cd` sprowadzi cię do katalogu domowego (czyli katalogu użytkownika).
+W katalogu domowym jest ukryty plik `.gitconfig`. Do pliku można zajrzeć z poziomu terminala np.:
+
+- jedynie podgląd: komenda `cat .gitconfig` (komenda `cat` wyświetla zawartość danego pliku),
+- w trybie edycji: komenda `nano .gitconfig` (wyjście z programu ctrl + x) lub `vim .gitconfig` (vim w trybie
+wyświetlania, aby edytować wybierz i, aby wyjść z tryby edycji esc, aby wyść z programu wyjdź z trybu edycji
+esc, aby wyjść z niemodyfikowanego pliku 
+:q, z modyfikowanego, ale bez zapisu :q!, zapisz i wyjdź :wq),
+
+> **_Tip:_** Wpisz do terminala `cat .gitc` i wciśniej tab. Nazwa pliku powinna samodzielnie się uzupełnić.
+Tab uzupełnia komendy/nazwy plików jeśli jest to możliwe.
+
+![Alt text](/imgs/git_config_2.png)
+
+## Połączenie konta na Githubie z lokalnym setupem
 
 
 
 [^1]: *GNU General Public License* jest wirusową licencją open-sourcową, która zobowiązuje
 dostawców oprogramowania do dostarczenia kodu źródłowego oprogramowania użytkownikowi. 
-
+[^2]: Zagadnienie dla chętnych realizowane indywidialnie na dyżurach lub po wcześniejszym umówieniu
+się z prowadzącym.
