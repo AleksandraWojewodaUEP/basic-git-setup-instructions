@@ -193,10 +193,12 @@ więc "nie opłaca" się jej przepisywać.
 Aby sprawdzić wprowadzone dane można w katalogu użytkownika sprawdzić plik `.gitconfig`.
 
 **Uwaga! Następujące komendy są uniksowe, więc mogą nie działać dla Git CMD, ale będą dla Git BASH**
+
 W terminalu wpisz `pwd`. Komenda ta wyświetla ścieżkę dostępu do bieżącego katalogu. 
 Dla Windowsa powinna być `/c/User/<nazwa użytkownika>` dla Linuxa `/home/<nazwa użytkownika>`.
 Jeśli nie jesteś w tym katalogu komenda `cd` sprowadzi cię do katalogu domowego (czyli katalogu użytkownika).
-W katalogu domowym jest ukryty plik `.gitconfig`. Do pliku można zajrzeć z poziomu terminala np.:
+W katalogu domowym jest ukryty[^3] plik `.gitconfig`. 
+Do pliku można zajrzeć z poziomu terminala np.:
 
 - jedynie podgląd: komenda `cat .gitconfig` (komenda `cat` wyświetla zawartość danego pliku),
 - w trybie edycji: komenda `nano .gitconfig` (wyjście z programu ctrl + x) lub `vim .gitconfig` (vim w trybie
@@ -217,3 +219,6 @@ Tab uzupełnia komendy/nazwy plików jeśli jest to możliwe.
 dostawców oprogramowania do dostarczenia kodu źródłowego oprogramowania użytkownikowi. 
 [^2]: Zagadnienie dla chętnych realizowane indywidialnie na dyżurach lub po wcześniejszym umówieniu
 się z prowadzącym.
+[^3]: Ukryty plik (lub katalog) to plik, który domyślnie nie jest wyświetlany. 
+Nazwa pliku zawiera na przedzie `.`. Wpisz komendę `ls` (wylistuj pliki) w terminal, następnie wpisz
+komendę `ls -a` (wylistuj wszystkie pliki). W przypadku pierwszego ukryte pliki nie zostaną wyświetlone.
