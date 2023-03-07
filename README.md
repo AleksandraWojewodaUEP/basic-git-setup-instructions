@@ -211,6 +211,41 @@ Tab uzupełnia komendy/nazwy plików jeśli jest to możliwe.
 
 ![Alt text](/imgs/git_config_2.png)
 
+## Wygenerowanie klucza SSH
+
+Klucz SSH będzie potrzebny do połączenia lokalnego setupu z kontem na Githubie.
+Uwierzytelnianie może odbyć się na wiele oposobów. Za pomocą tokena, klucza SSH, czy 
+klucza GPG. Do tego jeszcze kwestia szyforwania. Na zajęciach dozwolona jest dowolna 
+metoda, ale dla początkujących tutorial będzie przechodził przez proces ustawiania
+uwierzetylniania za pomocą klucza SSH. 
+
+Do wygenerowania klucza SSH służy komenda `ssh-keygen`. Na terminalu powinno wyświetlić się pytanie
+o nazwę plików zawierających parę klucz publiczy i prywatny. Enter pozowli na wybranie opcji domyślnej.
+Jeśli użytkownik posiada juz klucz o nazwie domyślnej można nadpisać plik lub użyć istniejącego klucza, 
+lub wybrać inną nazwę dla pary. 
+**Ten sam klucz SSH nie może zostać wykorzystany do dwóch kont na Githubie.** 
+(Konfiguracja wielu użytkowników dla jednej maszyny [^2]).
+Przez kolejne opcje także można przejść Enterem. Operacja zakończona powodzeniem wyświetli `randomart image`.
+
+![Alt text](/imgs/ssh_keygen.png)
+
+(Czy można podzielić się swoim `randomart image`?[^4])
+
+Klucze trzymane są w katalogu ukrytym[^3] `.ssh`. Można sprawdzić ich obecnośc przechodząc do katalogu 
+`.ssh`, który znajduje się w katalogu domowym (komenda sprawdzająca do katalogu domowego: `cd`).
+W katalogu `.ssh` wykonaj komendą `ls` (lub `ls -l` - wyświetl listę ze szczegółami,
+wtedy każdy plik jest w osobnej linii). W katalogu powinny znajdować się pliki `id_rsa` i `id_rsa.pub`.
+Pierwszy to klucz prywatny - tego nigdzie nie publikujemy/dodajemy/dzielimy się. Drugi plik to klucz
+publiczny, to go będziemy dodawać do konta na Githubie.
+
+> **_Tip:_** Na screenie jak przeszłam z katalogu domowego do katalogu `.ssh`, 
+po operacji przejścia widać jak zmianiła się nazwa katalogu w znaku zachęty (źółta część). 
+Znak zachęty w ustawieniach domyślnych Git BASH dla Windowsa będzie wyświetlał katalog
+w którym obecnie się znajdujemy. Znak zachęty może wyglądać różnie na wszystkich systemach, 
+jest w pełni modyfikowalny.
+Bardzo częto jednak domyślnie jest tego samego koloru co teskt wpisywany przez użytkownika,
+jednak jak wcześniej wspomniano można to zmodyfikować[^2]. 
+
 ## Połączenie konta na Githubie z lokalnym setupem
 
 
@@ -222,3 +257,4 @@ się z prowadzącym.
 [^3]: Ukryty plik (lub katalog) to plik, który domyślnie nie jest wyświetlany. 
 Nazwa pliku zawiera na przedzie `.`. Wpisz komendę `ls` (wylistuj pliki) w terminal, następnie wpisz
 komendę `ls -a` (wylistuj wszystkie pliki). W przypadku pierwszego ukryte pliki nie zostaną wyświetlone.
+[^4]: [Link](https://superuser.com/questions/1621434/can-you-publish-your-ssh-key-randomart)
