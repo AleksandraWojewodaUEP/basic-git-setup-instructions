@@ -145,9 +145,21 @@ Przykładowy oczekiwany rezultat:
 
 ### Dla macOS za pomocą `homebrew`
 
+Instalacja:
+
 ```
 brew install git
 ```
+
+Sprawdzenie, czy instalacja się powiodła:
+
+```
+git --version
+```
+
+Oczekiwanym rezulattem jest informacja o wersji oporgramowania Git na danej maszynie
+(podobnie jak dla Linuxa).
+
 ## Podsumowanie
 
 Więcej dostępnych informacji o pobieraniu Gita jest dostępnych na oficjalnej 
