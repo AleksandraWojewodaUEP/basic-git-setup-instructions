@@ -6,6 +6,10 @@ Założenie konta nie powinno stanowić dla Państwa problemu :).
 
 ## Instalacja Git
 
+Poniżej przedstawione zostały tutoriale do zainstalowania Gita dla wybranych systemów operacyjnych.
+Nie są to jedyne istaniejące sposoby i użytkownik może korzystać z innych możliwych opcji.
+Efektem oczekiwanym jest zainstalowany i działający Git.
+
 ### Dla systemu Windows
 
 1. Pobranie [Gita dla Windowsa](https://git-scm.com/download/win).
@@ -45,6 +49,7 @@ P.S. Uprzejmie przypominam, że to nie jest wybór na całe życie. Zawsze możn
 ![Alt text](/imgs/git_vim_4.png)
 
 "The only gym where it's possible to quit"
+
 ![Alt text](/imgs/vim_meme.png "Znalezione w czeluściach r/linuxmeme")
 
 7. Wybór nazwy głównej gałeźni (z ang. `branch`). Jakiś czas temu dokonano przejścia z nazwy `master`
@@ -146,7 +151,7 @@ brew install git
 ## Podsumowanie
 
 Więcej dostępnych informacji o pobieraniu Gita jest dostępnych na oficjalnej 
-[stronie internetowej](https://git-scm.com/downloads).
+[stronie internetowej Gita](https://git-scm.com/downloads).
 
 
 
