@@ -93,6 +93,6 @@ oraz ich wykorzystanie w praktyce. Użytkownik może przejść przez zajęcia wy
 ![Alt text](/imgs/git_c_helper_12.png)
 
 
-[^1] *GNU General Public License* jest wirusową licencją open-sourcową, która zobowiązuje
+[^1]: *GNU General Public License* jest wirusową licencją open-sourcową, która zobowiązuje
 dostawców oprogramowania do dostarczenia kodu źródłowego oprogramowania użytkownikowi. 
 
