@@ -92,6 +92,64 @@ oraz ich wykorzystanie w praktyce. Użytkownik może przejść przez zajęcia wy
 
 ![Alt text](/imgs/git_c_helper_12.png)
 
+15. `Configuring extra options` i `Configuration expermiental option`
+
+Generalnie dodatkowe opcje zależą od preferencji użytkownika, dla potrzeb zajęć można przeklikać opcje 
+domyślne (screeny poniżej). Użytkownik może dobrać dodatkowe konfiguracje według własnego uznania.
+
+![Alt text](/imgs/git_extra_opt_13.png)
+
+![Alt text](/imgs/git_experimental.png)
+
+16. Następnie powinien pojawić się pasek instalacji, a potwierdzeniem zainstalowania będzie:
+
+![Alt text](/imgs/git_end_15.png)
+
+#### Podsumowanie
+
+Gratulację! Na Twoim Windowsie jest Git.
+
+### Dla systemu Ubuntu/Debian
+
+Nieobowiązkowe, ale zalecane (zaktualizowanie paczek):
+
+```
+sudo apt update
+sudo apt upgrade
+```
+
+Instalacja Gita:
+
+```
+sudo apt install git
+```
+
+Dla innych linuksowych dystrybucji jest równie łatwo.
+
+Sprawdzenie, czy Git się zainstalował:
+
+```
+git --version
+```
+
+Przykładowy oczekiwany rezultat:
+
+![Alt text](/imgs/git_linux_v_1.png)
+
+(1:0 dla Linuxa)
+
+### Dla macOS za pomocą `homebrew`
+
+```
+brew install git
+```
+## Podsumowanie
+
+Więcej dostępnych informacji o pobieraniu Gita jest dostępnych na oficjalnej 
+[stronie internetowej](https://git-scm.com/downloads).
+
+
+
 
 [^1]: *GNU General Public License* jest wirusową licencją open-sourcową, która zobowiązuje
 dostawców oprogramowania do dostarczenia kodu źródłowego oprogramowania użytkownikowi. 
