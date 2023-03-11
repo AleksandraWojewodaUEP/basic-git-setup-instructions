@@ -275,7 +275,30 @@ Do formularza w polu `Key` wklej swój klucz publiczny.
 
 ![Alt text](imgs/github_5.png)
 
+Klucz powinien być widoczny w zakładcze `SSH keys`.
 
+## Stworzenie repozytorium
+
+1. Przejdź do rozwijanego menu w prawym górnym rogu przy ikonce użytkonika i wejdź w zakładkę
+`Your Repositories`.
+
+![Alt text](/imgs/new_repo_1.png)
+
+2. Nadaj nazwę repozytorium, wybierz opcję `Public`, resztę pocji pozostaw pustych.
+
+![Alt text](/imgs/new_repo_2.png)
+
+3. Po zatwierdzeniu nowego repozytorium na rekranie powinna znaleźć się informacja o `Quik setup`.
+W niebieskiego pola wybierz opcję `SSH`. Skopiuj link do repozytorium z pola.
+
+4. Przejdź do terminala/konsoli/emulatora. Przejdź do folderu/katalogu, w którym
+ma znajdować się repozytorium. Sklonuj repozytorium `git clone <repozytorium>` 
+**UWAGA Dla Git BASH dla Windowsa trzeba wybrać opcję SSH w niebieskim okienku na Githubie.** 
+Podczas pobierania repozytorium może pojawić się zapytanie o nawiązanie połaczenia z nowym hostem. 
+Trzeba się na nie zgodzić wpisując `yes`. Komendą `ls` można zobaczyć, czy repozytorium 
+zostało poprawnie sklonowane.
+
+![Ale text](/imgs/new_repo_3.png)
 
 [^1]: *GNU General Public License* jest wirusową licencją open-sourcową, która zobowiązuje
 dostawców oprogramowania do dostarczenia kodu źródłowego oprogramowania użytkownikowi. 
