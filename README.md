@@ -238,6 +238,8 @@ wtedy każdy plik jest w osobnej linii). W katalogu powinny znajdować się plik
 Pierwszy to klucz prywatny - tego nigdzie nie publikujemy/dodajemy/dzielimy się. Drugi plik to klucz
 publiczny, to go będziemy dodawać do konta na Githubie.
 
+![Alt text](/imgs/ssh_keys_check.png)
+
 > **_Tip:_** Na screenie jak przeszłam z katalogu domowego do katalogu `.ssh`, 
 po operacji przejścia widać jak zmianiła się nazwa katalogu w znaku zachęty (źółta część). 
 Znak zachęty w ustawieniach domyślnych Git BASH dla Windowsa będzie wyświetlał katalog
@@ -252,6 +254,26 @@ jednak jak wcześniej wspomniano można to zmodyfikować[^2].
 
 ![Alt text](/imgs/github_1.png)
 
+2. Wejście w `SSH and GPG keys` w lewym pasku i wybranie `New SSH key`
+
+![Alt text](/imgs/github_2.png)
+
+3. Przejdź do przeszukiwacza plików (ang. `Files explorer`) i przejdź do folderu `.ssh`.
+W folderze powinny znajdować się klucze `id_rsa` i `id_rsa.pub`. **UWAGA! W nowszych Windowsach
+w explorerze plików nie widać rozszerzenia klucza publicznego, można go poznać po ikonce z małym
+`P`.** Najedź myszką na klucz publiczny i kliknij drugim przyciskiem myszki. `Otwórz za pomocą...`
+i wybierz edytor tekstu, np. Notatnik. Skopiuj zawartość (crtl + A, ctrl + C).
+
+![Alt text](/imgs/github_3.png)
+
+![Alt text](/imgs/github_4.png)
+
+4. Nadaj kluczowi nazwę. Nazwa powinna wskazywać na maszynę, z której pochodzi klucz. W moim przypadku
+koncepcja nazywania kluczy to `jumper_<marka_laptopa>_<dopisek>`, jednak sposób nazwania klucza zależy
+od użytkonika i nie musi mapować się do sugestii z podpunktu lub z screena. 
+Do formularza w polu `Key` wklej swój klucz publiczny. 
+
+![Alt text](imgs/github_5.png)
 
 
 
