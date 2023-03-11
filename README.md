@@ -293,7 +293,6 @@ W niebieskiego pola wybierz opcję `SSH`. Skopiuj link do repozytorium z pola.
 
 4. Przejdź do terminala/konsoli/emulatora. Przejdź do folderu/katalogu, w którym
 ma znajdować się repozytorium. Sklonuj repozytorium `git clone <repozytorium>` 
-**UWAGA Dla Git BASH dla Windowsa trzeba wybrać opcję SSH w niebieskim okienku na Githubie.** 
 Podczas pobierania repozytorium może pojawić się zapytanie o nawiązanie połaczenia z nowym hostem. 
 Trzeba się na nie zgodzić wpisując `yes`. Komendą `ls` można zobaczyć, czy repozytorium 
 zostało poprawnie sklonowane.
