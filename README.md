@@ -248,6 +248,11 @@ jednak jak wcześniej wspomniano można to zmodyfikować[^2].
 
 ## Połączenie konta na Githubie z lokalnym setupem
 
+1. Wejście w ustawienia (`Settings`) z paska wybieranego w prawym górnym roku na UI Githuba.
+
+![Alt text](/imgs/github_1.png)
+
+
 
 
 [^1]: *GNU General Public License* jest wirusową licencją open-sourcową, która zobowiązuje
