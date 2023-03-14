@@ -16,7 +16,7 @@ Aby zrobić pierwszy commit wchodzimy do repozytorium `cd example-project/` (**J
 nazywa się inaczej, to proszę stosować swoją nazwę :)**). (Dla przykładu na screenie po lewej CMD, po 
 prawej `Git BASH`).
 
-![Alt text](/imgs/comd_bash.png)
+![Alt text](/imgs/cmd_bash.png)
 
 W `Git BASH` widać w prompcie w kolorze niebieskiem `(main)`. Jest to nazwa brancha, na którzym aktualnie jesteśmy.
 Jest to także znak, że jesteśmy w repozytorium. CMD nie daje takiej informacji w podstawowej konfiguracji.
@@ -25,7 +25,9 @@ Tworzymy nowy plik `README.md`. Można to zrobić na wiele sposobów. Dla ćwicz
 Poniżej zamieszono instrukcje dla `vim` (1) i dla `nano` (2). Wykonując 1, nie wykonujemy 2 i odwrotnie. 
 Zadanie można wykonać także na własny sposób.
 
-### 1. **vim** Komendą `vim README.md` tworzymy plik `README`.
+### 1. **vim** 
+
+1. Komendą `vim README.md` tworzymy plik `README.md`[^1] (screen 1) i do niego przechodzimy (screen 2).
 
 
 
