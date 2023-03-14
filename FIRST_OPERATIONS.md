@@ -60,7 +60,7 @@ Eneterem akceptujemy nazwę.
 
 3. Wychodzimy z pliku `crtl + x` (dla Maka: ⌘ + x).
 
------------------------ koniec `nano` ----------------------------
+### Podrót do części wspólnej
 
 Po zapisaniu pliku i wyjściu z edytora wpisujemy komendę `git status`. (Po lewej `Git CMD`, po prawej `Git BASH`).
 
@@ -120,4 +120,6 @@ Analiza:
 5. Jaka gałądź (ang. branch) jest wyświetlana. 
 
 
-[^1]: `README.md`  
+[^1]: `README.md`- plik tekstowy dołączony do kodu źródłowego w formacie `.md` (Markdown).
+Wyświetla się jak swego rodzaju wstęp do projektu na głóœnej stronie repozytorium.
+Więcej o formacie Markdown [tutaj](https://www.markdownguide.org/cheat-sheet/).
