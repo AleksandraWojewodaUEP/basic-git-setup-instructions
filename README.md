@@ -130,6 +130,8 @@ sudo apt install git
 ```
 
 Dla innych linuksowych dystrybucji jest równie łatwo.
+Sposób instalacji dla innych dystrybucji dostępny w oficjalnej 
+dokumentacji Gita.
 
 Sprawdzenie, czy Git się zainstalował:
 
@@ -144,6 +146,8 @@ Przykładowy oczekiwany rezultat:
 (1:0 dla Linuxa)
 
 ### Dla macOS za pomocą `homebrew`
+
+Instalacja [Homebrew](https://brew.sh/) (komendę wklejamy do terminala).
 
 Instalacja:
 
@@ -160,6 +164,13 @@ git --version
 Oczekiwanym rezulattem jest informacja o wersji oporgramowania Git na danej maszynie
 (podobnie jak dla Linuxa).
 
+#### Rozwiązywanie problemów
+
+Lista problemów z zajęć:
+
+1. `zsh: command not found: brew` --> 
+[stackoverflow](https://stackoverflow.com/questions/36657321/after-installing-homebrew-i-get-zsh-command-not-found-brew).
+
 ### Podsumowanie
 
 Więcej dostępnych informacji o pobieraniu Gita jest dostępnych na oficjalnej 
@@ -168,9 +179,9 @@ Więcej dostępnych informacji o pobieraniu Gita jest dostępnych na oficjalnej
 ## Konfigracji Gita lokalnie
 
 Dla wszystkich systemów operacyjnych operacja ta powinna wyglądać tak samo.
-W Windowsie wybieramy `Git BASH`. W Linuxie/Macu terminal.
+W Windowsie wybieramy `Git BASH` lub `Git CMD`. W Linuxie/Macu terminal.
 
-Ustawienie nazwy i maila użytkownika:
+Ustawienie nazwy i maila użytkownika (komendy wpisujemy osobno, najpierw jedną, potem drugą) (rozwiązanie ewentualnych problemów poniżej w sekcje "Rozwiązanie problemów"):
 
 ```
 git config --global user.name "Imię Nazwisko"
@@ -178,7 +189,7 @@ git config --global user.email "niu@ue.poznan.pl"
 ```
 
 W odpowiednich miejscach wpisz swoje dane. Przełącznik `--global` nie jest wymagany, 
-szczególnie w przypadku wykorzystywania jednej maszyny dla wielu użyrkoników Gita.
+szczególnie w przypadku wykorzystywania jednej maszyny dla wielu użytkowników Gita.
 Przykładowo użytkownik uczelniany, prywatny i służbowy.
 Można stworzyć konfigurację, która zezwala na odseparowanie od siebie kont Gitowych[^2].
 
@@ -211,10 +222,18 @@ Tab uzupełnia komendy/nazwy plików jeśli jest to możliwe.
 
 ![Alt text](/imgs/git_config_2.png)
 
+### Rozwiązanie problemów
+
+Cześć osób znalazła się w takim położeniu:
+
+![Alt text](/imgs/problem_1.png)
+
+Aby z niego wyjść, można wyjść z komendy bez jej wykonywania za pomocą klawiszy `ctrl + c` (polecam kliknąć kilka razy).
+
 ## Wygenerowanie klucza SSH
 
 Klucz SSH będzie potrzebny do połączenia lokalnego setupu z kontem na Githubie.
-Uwierzytelnianie może odbyć się na wiele oposobów. Za pomocą tokena, klucza SSH, czy 
+Uwierzytelnianie może odbyć się na wiele sposobów. Za pomocą tokena, klucza SSH, czy 
 klucza GPG. Do tego jeszcze kwestia szyforwania. Na zajęciach dozwolona jest dowolna 
 metoda, ale dla początkujących tutorial będzie przechodził przez proces ustawiania
 uwierzetylniania za pomocą klucza SSH. 
@@ -258,7 +277,7 @@ jednak jak wcześniej wspomniano można to zmodyfikować[^2].
 
 ![Alt text](/imgs/github_2.png)
 
-3. Przejdź do przeszukiwacza plików (ang. `Files explorer`) i przejdź do folderu `.ssh`.
+3. **Windows** Przejdź do przeszukiwacza plików (ang. `Files explorer`) i przejdź do folderu `.ssh`.
 W folderze powinny znajdować się klucze `id_rsa` i `id_rsa.pub`. **UWAGA! W nowszych Windowsach
 w explorerze plików nie widać rozszerzenia klucza publicznego, można go poznać po ikonce z małym
 `P`.** Najedź myszką na klucz publiczny i kliknij drugim przyciskiem myszki. `Otwórz za pomocą...`
@@ -267,6 +286,22 @@ i wybierz edytor tekstu, np. Notatnik. Skopiuj zawartość (crtl + A, ctrl + C).
 ![Alt text](/imgs/github_3.png)
 
 ![Alt text](/imgs/github_4.png)
+
+**MacOS** Skopiowanie klucza może odbyć się przez terminal. 
+Przechodzimy do katalogu z kluczami `cd ~/.ssh/`.
+Printowanie na standardowe wyjście odbywa się za pomocą komendy `cat id_rsa.pub`.
+Aby skopiować do schowka wystarczy wyjście z poprzedniej komendy podać jako wejście
+do kolejnej `pbcody` za pomocą `|`. Cała komenda będzie prezentować się tak: 
+`cat id_rsa.pub | pbcopy`. Klucz wklej do formularza na Githubie za pomocą ⌘ + v.
+
+**Linux**
+Przechodzimy do katalogu z kluczami `cd ~/.ssh/`.
+Printowanie na standardowe wyjście odbywa się za pomocą komendy `cat id_rsa.pub`.
+Aby skopiować do schowka wystarczy wyjście z poprzedniej komendy podać jako wejście
+do kolejnej `xclip -selection clipboard` za pomocą `|`. 
+Cała komenda będzie prezentować się tak: 
+`cat id_rsa.pub | xclip -selection clipboard`. 
+Klucz wklej do formularza na Githubie za pomocą crtl + v.
 
 4. Nadaj kluczowi nazwę. Nazwa powinna wskazywać na maszynę, z której pochodzi klucz. W moim przypadku
 koncepcja nazywania kluczy to `jumper_<marka_laptopa>_<dopisek>`, jednak sposób nazwania klucza zależy
@@ -284,17 +319,22 @@ Klucz powinien być widoczny w zakładcze `SSH keys`.
 
 ![Alt text](/imgs/new_repo_1.png)
 
-2. Nadaj nazwę repozytorium, wybierz opcję `Public`, resztę pocji pozostaw pustych.
+2. Nadaj nazwę repozytorium, wybierz opcję `Public`, resztę opcji pozostaw pustych.
 
 ![Alt text](/imgs/new_repo_2.png)
 
-3. Po zatwierdzeniu nowego repozytorium na rekranie powinna znaleźć się informacja o `Quik setup`.
-W niebieskiego pola wybierz opcję `SSH`. Skopiuj link do repozytorium z pola.
+3. Po zatwierdzeniu nowego repozytorium na ekranie powinna znaleźć się informacja o `Quik setup`.
+**W niebieskiego pola wybierz opcję `SSH` (patrz screen)**. Skopiuj link do repozytorium z pola.
+
+![Alt text](/imgs/new_repo_2_1.png)
 
 4. Przejdź do terminala/konsoli/emulatora. Przejdź do folderu/katalogu, w którym
-ma znajdować się repozytorium. Sklonuj repozytorium `git clone <repozytorium>` 
+ma znajdować się repozytorium. 
+**UWAGA! Jeśli nie wiesz gdzie umieścić repozytorium to wróć do katalogu głównego
+za pomocą komendy `cd` i tam go umiejść. Nie w `.ssh/`!**
+Sklonuj repozytorium `git clone <link z niebieskiego pola>` 
 Podczas pobierania repozytorium może pojawić się zapytanie o nawiązanie połaczenia z nowym hostem. 
-Trzeba się na nie zgodzić wpisując `yes`. Komendą `ls` można zobaczyć, czy repozytorium 
+Trzeba się na nie zgodzić wpisując `yes` (patrz screen). Komendą `ls` można zobaczyć, czy repozytorium 
 zostało poprawnie sklonowane.
 
 ![Ale text](/imgs/new_repo_3.png)
