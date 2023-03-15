@@ -17,9 +17,11 @@ jeśli ktoś chciałby wykonać ćwiczenia w innym repozytorium - nie ma problem
 
 ## Ćwiczenia samodzielne
 
+### 1. Podstawowe operacje w repozytorium lokalnym i ich cofanie
+
 1. Utwórz folder/katalog: `mkdir exercise/`.
 
-2. Przejdź do utowrzonego folderu/katalogu: `cd exercise/`.
+2. Przejdź do utworzonego folderu/katalogu: `cd exercise/`.
 
 3. Utwórz nowy plik: `touch ex_1.py`. (Plik powinien się wyświetlać w liście plików, można sprawdzić
 za pomocą `ls` lub wejść w Explorer plików i sprawdzić, czy plik pojawił się w folderze repozytorium).
@@ -46,4 +48,34 @@ assert hello("Zuzia") == "Hello Zuzia"
 
 print("Zadanie zrobione")
 ```
+
+6. Zapisz plik.
+
+7. Dodaj plik do stagingu `git add ex_1.py`.
+
+8. Zacommituj zmiany `git commit -m "Added first task"`, aby amina została zapisana w repozytorium 
+lokalnym.
+
+9. Cofnij commita z repozytorium lokalnego, ale nie usuwaj zmian `git reset --soft HEAD^`
+
+10. Cofnij zmiany ze staging: `git restore --staged ex_1.py`
+
+11. Powtórz krok 7 i 8.
+
+12. Cofnij commit z repozytorium lokalnego razem ze zmianami, które wprowadził: `git reset --hard HEAD^`.
+**UWAGA! Jeśli znajdujesz się w folderze/katalogu `exercise/`, który właśnie przestał istanieć, należy
+się z niego wrócić do `example-project` (katalogu głównego repo), pozwoli na to komenda `cd ..`.**
+
+13. Powtórz kroki 1-7.
+
+14. Commitnij, ale w wiadomości popełnij literówkę, np. `git commit -m "Added first taks"`
+
+15. Popraw literówkę w wiadomości `git commit --amend`. Komenda przeniesie cię do domyślnego edytora
+tesktu. Edytuj wiadomość commita w edytorze i zapisz. Wiadomość commita automatycznie się 
+nadpisze.
+
+
+
+
+
 
