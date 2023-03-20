@@ -181,7 +181,8 @@ Więcej dostępnych informacji o pobieraniu Gita jest dostępnych na oficjalnej
 Dla wszystkich systemów operacyjnych operacja ta powinna wyglądać tak samo.
 W Windowsie wybieramy `Git BASH` lub `Git CMD`. W Linuxie/Macu terminal.
 
-Ustawienie nazwy i maila użytkownika (komendy wpisujemy osobno, najpierw jedną, potem drugą) (rozwiązanie ewentualnych problemów poniżej w sekcje "Rozwiązanie problemów"):
+Ustawienie nazwy i maila użytkownika (komendy wpisujemy osobno, najpierw jedną, potem drugą) 
+(rozwiązanie ewentualnych problemów poniżej w sekcje "Rozwiązanie problemów"):
 
 ```
 git config --global user.name "Imię Nazwisko"
@@ -228,7 +229,8 @@ Cześć osób znalazła się w takim położeniu:
 
 ![Alt text](/imgs/problem_1.png)
 
-Aby z niego wyjść, można wyjść z komendy bez jej wykonywania za pomocą klawiszy `ctrl + c` (polecam kliknąć kilka razy).
+Aby z niego wyjść, można wyjść z komendy bez jej wykonywania za pomocą klawiszy `ctrl + c` (polecam kliknąć 
+kilka razy).
 
 ## Wygenerowanie klucza SSH
 
