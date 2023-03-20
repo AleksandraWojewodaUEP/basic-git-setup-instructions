@@ -62,9 +62,10 @@ lokalnym.
 
 11. Powtórz krok 7 i 8.
 
-12. Cofnij commit z repozytorium lokalnego razem ze zmianami, które wprowadził: `git reset --hard HEAD^`.
-**UWAGA! Jeśli znajdujesz się w folderze/katalogu `exercise/`, który właśnie przestał istanieć, należy
-się z niego wrócić do `example-project` (katalogu głównego repo), pozwoli na to komenda `cd ..`.**
+12. **UWAGA! Jeśli znajdujesz się w folderze/katalogu `exercise/`, który zaraz przestanie istanieć, należy
+się z niego wrócić do `example-project` (katalogu głównego repo), pozwoli na to komenda `cd ..` 
+(tak, tam są dwie kropki).**
+Cofnij commit z repozytorium lokalnego razem ze zmianami, które wprowadził: `git reset --hard HEAD^`.
 
 13. Powtórz kroki 1-7.
 
