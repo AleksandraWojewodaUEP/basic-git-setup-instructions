@@ -75,7 +75,8 @@ Cofnij commit z repozytorium lokalnego razem ze zmianami, które wprowadził: `g
 tesktu. Edytuj wiadomość commita w edytorze i zapisz. Wiadomość commita automatycznie się 
 nadpisze.
 
-
+16. Wypchnij commita za pomocą komendy: `git push`. Zmiany powinny być widoczne na rpozytorium zdalnym 
+na Githubie.
 
 
 
