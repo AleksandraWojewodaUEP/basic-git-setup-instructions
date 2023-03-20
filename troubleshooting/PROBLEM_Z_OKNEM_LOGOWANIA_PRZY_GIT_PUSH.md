@@ -1,5 +1,4 @@
-# "Jak próbuję `git push` to otwiera mi się przeglądarka i muszę się zalogować do Githuba, a
-dodałem_am klucze ssh"
+# "Jak próbuję `git push` to otwiera mi się przeglądarka i muszę się zalogować do Githuba, a dodałem_am klucze ssh"
 
 Dzieję, że tak, bo zamiast SSH zostało wybranne HTTPS. Jeśli korzystają Państwo ze swojej maszyny
 na zajęciach to polecam SSH:
