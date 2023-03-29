@@ -60,7 +60,7 @@ Na zajeciach przykłady będą wykorzystywały `main` jako główną gałąź.
 
 8. `Adjusting your PATH environment` 
 
-- na zajęciach prezentowane będą opcje które wymagają także uniksowych narzędzi (tak jak na screenie),
+- na zajęciach prezentowane będą opcje, które wymagają także uniksowych narzędzi (tak jak na screenie),
 - pozostałe opcje pozwolą przejść przez ćwiczenia na zajęciach, także opcja wybrana na screenie nie jest
 opcją obowiązkową,
 - opcja `Use Git from Bash only` jest szczególnie polecana, jeśli użytkownik chce nie ingerować w `PATH`.
@@ -89,7 +89,7 @@ Użytkownik może zdecydować się na opcję o wyborze zewnętrzego `OpenSSH`.
 
 Pytanie z odpowiedzią typu "to zależy". W pierwszej fazie polecam opcję domyślą (jak na screenie).
 Wraz ze wzrostem umiejętności korzystania z Gita łatwiejsze będzie zrozumienie pozostałych dostępnych opcji
-oraz ich wykorzystanie w praktyce. Użytkownik może przejść przez zajęcia wykorzystując dowlne ustawienie.
+oraz ich wykorzystanie w praktyce. Użytkownik może przejść przez zajęcia wykorzystując dowolne ustawienie.
 
 ![Alt text](/imgs/git_pull_11.png)
 
@@ -161,7 +161,7 @@ Sprawdzenie, czy instalacja się powiodła:
 git --version
 ```
 
-Oczekiwanym rezulattem jest informacja o wersji oporgramowania Git na danej maszynie
+Oczekiwanym rezultatem jest informacja o wersji oprogramowania Git na danej maszynie
 (podobnie jak dla Linuxa).
 
 #### Rozwiązywanie problemów
@@ -197,7 +197,7 @@ Można stworzyć konfigurację, która zezwala na odseparowanie od siebie kont G
 W przypadku ewentualnego błędu/literówki polecenie można wykonac ponownie.
 
 > **_Tip:_**  Będąc w terminalu (lub emulatorze terminala) strzałka w górę pozwala na przywołanie komend.
-Szczególnie przydatne jeśli chcemy danej komendy użyć dwa razy lub komendy są od siebie nieznacznie róźne, 
+Szczególnie przydatne, jeśli chcemy danej komendy użyć dwa razy lub komendy są od siebie nieznacznie róźne, 
 więc "nie opłaca" się jej przepisywać. 
 
 ![Alt text](/imgs/git_config_1.png)
@@ -242,7 +242,7 @@ uwierzetylniania za pomocą klucza SSH.
 
 Do wygenerowania klucza SSH służy komenda `ssh-keygen`. Na terminalu powinno wyświetlić się pytanie
 o nazwę plików zawierających parę klucz publiczy i prywatny. Enter pozowli na wybranie opcji domyślnej.
-Jeśli użytkownik posiada juz klucz o nazwie domyślnej można nadpisać plik lub użyć istniejącego klucza, 
+Jeśli użytkownik posiada już klucz o nazwie domyślnej można nadpisać plik lub użyć istniejącego klucza, 
 lub wybrać inną nazwę dla pary. 
 **Ten sam klucz SSH nie może zostać wykorzystany do dwóch kont na Githubie.** 
 (Konfiguracja wielu użytkowników dla jednej maszyny [^2]).
