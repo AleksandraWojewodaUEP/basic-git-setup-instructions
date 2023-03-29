@@ -66,7 +66,7 @@ example-project/
 ## Zadania do wykonania
 
 1. Wklej kod poniżej do pliku ex_2.py i go zacommituj (instrukcja commitowania z
-z poziomu IDE poniżej kodu):
+poziomu IDE poniżej kodu):
 
 ```python
 # trojkat
@@ -106,7 +106,7 @@ różnych figur. Oczekiwana historia commitów to:
 ![img](/imgs/ex_2_2.png)
 
 3. Ostatnim zadaniem jest zapoznanie z `.gitignore`. `.gitignore` to plik, który zawiera
-informacje, które pliki (a także foldery/katalogi[^3]) mają zostać zignorowane. Aktualizowanie
+informacje, które pliki, a także foldery/katalogi mają zostać zignorowane. Aktualizowanie
 i utrzymywanie `.gitignore` jest powszechną praktyką. Jeśli zadania zostały wykonane w IDE
 PyCharm komenda `git status` powinna zwrócić taki status:
 
@@ -143,7 +143,7 @@ robocze `vim`, więc plik będzie wyglądać następująco:
 *.swp
 ```
 
-Następnie plik dodać `git add .gitignore` i commitnąć `git commit -m "Added .gitignore"`
+Następnie plik należy dodać `git add .gitignore` i commitnąć `git commit -m "Added .gitignore"`
 (można także z poziomu IDE).
 
 Oczekiwana historia commitów na zaliczenie zadania to:
@@ -162,8 +162,3 @@ internetowej.
 [^2]: Nie wszystkie IDE posiadają tą funkcję (funkcjonalność) domyślnie, ale wiele oferuje wraz
 z jakimś pluginem. We wszystkich IDE od JetBrain podświetlanie domyślnie wygląda tak samo. 
 Więcej o znaczeniu kolorów można przeczytać w oficjalnej dokumentacji.
-
-[^3]: Wszystko w Linuxie jest plikiem, więc powiedzenie pliki lub katalogi niekoniecznie
-jest poprawne, bo katalog jest plikiem, acz wydaje mi się, że takie ujęcie jest łatwiejsze
-do zrozumienia, nie trzeba o tym wiedzieć. Dla ciekawskich: [Explain "In Linux and UNIX, 
-everything is a file"](https://askubuntu.com/questions/1103937/explain-in-linux-and-unix-everything-is-a-file#:~:text=The%20%22Everything%20is%20a%20file,filesystem%20layer%20in%20the%20kernel.)
