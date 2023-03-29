@@ -1,10 +1,10 @@
 # Pierwsze kroki
 
 Operacje wykonywane za pomocą `git` będą wyglądać identycznie niezależnie od tego, czy korzysta się z
-Linuxa/MacOS/Windowsa. `Git BASH` będzie (próbował) zachowywywać się tak samo jak terminal Linuxa/MacOS,
+Linuxa/MacOS/Windowsa. `Git BASH` będzie (próbował) zachowywać się tak samo, jak terminal Linuxa/MacOS,
 więc komendy używane w tutorialu się mapują. Jeśli ktoś z Państwa chcę bardziej zaprzyjaźnić się z
 `Git CMD` postaram się w tutorialu zamieścić także instrukcję do CMD :). Jeśli do komendy nie ma dopisku
-to znaczy, że powinna działać w każdym emulatorze/termianlu/konsoli.
+to znaczy, że powinna działać w każdym emulatorze/termianalu/konsoli.
 
 ## Initial commit / Init commit
 
@@ -80,7 +80,7 @@ nothing added to commit but untracked files present (use "git add" to track) -->
 	pliki
 ```
 
-Nie trudno się domyśleć, że kolejną operacją będzie dodanie pliku: `git add README.md`.
+Nietrudno się domyślić, że kolejną operacją będzie dodanie pliku: `git add README.md`.
 
 Wykonujemy znowu komendę `git status`.
 
@@ -117,9 +117,9 @@ Analiza:
 
 4. Hash ostatniego commita.
 
-5. Jaka gałądź (ang. branch) jest wyświetlana. 
+5. Jaka gałąź (ang. branch) jest wyświetlana. 
 
 
 [^1]: `README.md`- plik tekstowy dołączony do kodu źródłowego w formacie `.md` (Markdown).
-Wyświetla się jak swego rodzaju wstęp do projektu na głóœnej stronie repozytorium.
+Wyświetla się jak swego rodzaju wstęp do projektu na głównej stronie repozytorium.
 Więcej o formacie Markdown [tutaj](https://www.markdownguide.org/cheat-sheet/).
