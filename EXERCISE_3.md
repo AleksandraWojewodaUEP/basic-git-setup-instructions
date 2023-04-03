@@ -90,27 +90,18 @@ budowanie rozwiązania, a później dobudowanie poprawki: `of-235-fix` :)
 flagą `--help`, które otwiera pomoc dla danej komendy. Możesz wypróbować komendę np. 
 `git checkout --help`. Konsola/terminal w dolnej częsci podpowie ci jak wyjść z pomocy.
 
+### Zadanie kodowe
+
+Na nowej gałęzi dodaj kod poniżej: 
 
 ```
-# kwadrat
-
-# prostokat
-
-# rownoleglobok
-
-# romb
-
-# trapez
-
-# kolo
-
-
 def trojkat(bok_a, bok_b, bok_c, wysokosc_a):
     obwod = bok_a + bok_b + bok_c
     pole = (bok_a * wysokosc_a) / 2
     return obwod, pole
 
 
+# kwadrat, prostokat dla studenta 1
 def kwadrat(bok):
     # TODO
     return 0, 0
@@ -120,17 +111,16 @@ def prostokat(bok_a, bok_b):
     # TODO
     return 0, 0
 
-
+# rownoleglobok i romb dla studenta 2
 def rownoleglobok(bok_a, bok_b, wysokosc_a):
     # TODO
     return 0, 0
-
 
 def romb(bok, wysokosc):
     # TODO
     return 0, 0
 
-
+# trapez i kolo dla studenta 3
 def trapez(bok_a, bok_b, bok_c, bok_d, wysokosc_a):
     # TODO
     return 0, 0
@@ -147,6 +137,35 @@ assert prostokat(12, 10) == (44, 120)
 assert rownoleglobok(6, 5, 2) == (22, 12)
 assert romb(10, 5) == (40, 50)
 assert trapez(10, 15, 7, 14, 2) == (45, 25)
-# TODO dopisz 2 testy dla kola i dla kazdej innej figury po jednym dodatkowym tescie
+# TODO na koniec! dopisz 2 testy dla kola i dla kazdej innej figury po jednym dodatkowym tescie
 
 ```
+
+Dokonaj (*commit*) i wypchnij (*push*). Za pomocą IDE - powinno wyskoczyć okno z zapytaniem
+o gałąź zdalną. Za pomocą terminala trzeba wskazać upstream:
+
+```
+git push --set-upstream origin <nowy-branch>
+```
+
+Można wskazywać upstream za każdym pushem, jednak zdecydowanie lepszym rozwiązaniem jest ustawienie
+upstreamu (flaga `--set-upstream`).
+
+Proszę o dobranie się w trzy osobowe grupy. 
+
+W zespole wyznaczcie repozytorium, które na czas zadania będzie repozytorium dla zespołu.
+
+Sklonujcie repo zespołowe.
+
+Utwórzcie dla siebie branche - może być od treści zadania, może być od tymczosowego numeru studenta,
+może być mieszanką tych obu.
+
+Każdy student robi swój fragment zadania. 
+
+Efekt finalny: wszystkie figury powinny być zrobione przez zepół przynajmniej 2 osobowy, zadania mają
+się znaleźć na mainie :).
+
+
+
+
+
