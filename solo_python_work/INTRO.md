@@ -136,7 +136,7 @@ studenci = ["Anna Szczesny", "Tomasz Nijaki", "Barbara Kowalska", "Jan Niezbedny
 # Tomasz Nijaki
 print("Alfabetyczna lista studentow wynosi: ")
 for student in studenci:
-    print(studenci)
+    print(student)
 ```
 
 **Zadanie 1.8** Posortuj po nazwisku studentów. Możesz sortować w miejscu w tabeli
@@ -155,7 +155,7 @@ studenci = ["Anna Szczesny", "Tomasz Nijaki", "Barbara Kowalska", "Jan Niezbedny
 # Anna Szczesny
 print("Alfabetyczna lista studentow wynosi: ")
 for student in studenci:
-    print(studenci)
+    print(student)
 ```
 
 **Zadanie 1.9** Policz wszystkich studentów z tablicy, których nazwisko zaczyna się na N.
