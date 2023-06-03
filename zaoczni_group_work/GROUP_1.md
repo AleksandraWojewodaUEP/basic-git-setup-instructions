@@ -29,7 +29,7 @@ assert nazwa_funckji(parametry,) == spodziewany_wynik
 
 - testy sprawdzające działanie funckji dla kuli.
 
-**UWAGA! Ta sama osoba nie może wykonywać funkcji dla figury i 
-dla tej samej figury.**
+**UWAGA! Ta sama osoba nie może wypisać funkcji dla figury i 
+testów dla tej samej figury.**
 
 
