@@ -32,4 +32,15 @@ assert nazwa_funckji(parametry,) == spodziewany_wynik
 **UWAGA! Ta sama osoba nie może wypisać funkcji dla figury i 
 testów dla tej samej figury.**
 
+## Zadania cz. B
+
+- Zmiana wymagań! Kula jednak ma być stożkiem,
+
+- zmana dotyczy także testów,
+
+- dopisz kolejną figurę: strosłup, 
+
+- dopisz testy dla ostrosłup.
+
+
 
