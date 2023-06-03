@@ -42,5 +42,35 @@ testów dla tej samej figury.**
 
 - dopisz testy dla ostrosłup.
 
+## Zadanie cz. C
 
+1. W pliku `salary.py`.
 
+- Za pomocą instrukcji i założęń z 
+[link](https://www.biznes.gov.pl/pl/portal/0083) 
+stwórz klasę `Pracownik` z funkcjami: `__init__`, `__str__`, 
+`oblicz_netto`, `oblicz_koszty_pracodawcy`, `wygeneruj_raport`. 
+`oblicz_netto` ma zwracać wartość flouat z dwoma miejscami po przecinku, 
+tak samo koszty pracodawcy, które mają zwracać tzw. brutto brutto. 
+`wygeneruj_raport` nie ma nic zwracać (return), 
+ma wyśwteilać (print) tzw. pasek z kosztem/składką i jej wartością. 
+Dane wejściowe: imię, nazwisko, pensja_brutto
+Każdą funckję ma wykonać inny student w zespole, 
+chyba że jest ich za mało, wtedy wybrane osoby mogą wziąć dwie.
+
+- Dopisz testy klasy `Pracownik` dla `__str__`, `oblicz_netto` i
+`oblicz_koszty_pracodawcy`, testów nie może pisać ta sama osoba, 
+co pisała funkcje.
+
+- Napisz generator w pliku `generator.py`, który w folderze/katalodu 
+`data` wygenreuje plik csv `pracownicy.csv` z imieniem, nazwiskiem i pseudolosową pensją 
+z przedziału 1000 do 10000.
+
+- Zadeklaruj pętle, która będzie wczytywać dane z pliku 
+`data/pracownicy.csv` i kolejno wykonywać wszystkie funcje z klasy
+`Pracownik`.
+
+2. Wszystko powinno być na gałęzi głównej!
+
+3. Wrzuć wykonane zadanie do wrzutki na Moodle. Pamiętaj, każdy z 
+zespołu wrzuca zadanie do swojej wrzutki.
