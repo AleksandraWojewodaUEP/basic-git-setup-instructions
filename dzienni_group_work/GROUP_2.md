@@ -8,6 +8,8 @@
 
 3. Każdy moduł musi rozpocząć się nowymi branchami developerskimi.
 
+4. Wszystkie funkcje i testy powinny znajdować się w pliku `main.py`
+
 ### Repozytorium 
 
 1. Dobranie się w zepsoły 2 - 3 osobowe.
