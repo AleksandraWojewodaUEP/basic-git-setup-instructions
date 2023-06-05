@@ -29,8 +29,6 @@ zrobili to ściągają zmiany (`git pull`).
 
 ### Moduł A
 
-W pliku `main.py` w katalogu głównym projektu powinny się znaleźć:
-
 1. Funkcja porządkująca do prawej, której zadaniem jest uporządkowanie 
 inputu i wygenerowanie stringa, który będzie prezentował dane w równych liniach, 
 zaś kolumny liczbowe będą przyklejone do prawej.
