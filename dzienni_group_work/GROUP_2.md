@@ -27,6 +27,9 @@ zrobili to ściągają zmiany (`git pull`).
 
 7. Każdy członek zespołu tworzy swoją gałąź od imienia i litery modułu, np. `ola-a`
 
+8. Jeśli ktoś pracuje z IDE generującym swój filder/katalog: utwórz `.gitignore` i
+dodaj katlog IDE do pliku.
+
 ### Moduł A
 
 1. Funkcja porządkująca do prawej, której zadaniem jest uporządkowanie 
