@@ -56,3 +56,21 @@ Przykład testu:
 ```
 assert porzadkuj_do_prawej(input) == oczekiwany_output
 ```
+
+### Moduł B
+
+1. Funkcja wyznaczająca brakujący wierzchołek kwadratu na wykresie.
+
+Przykładowe wejście: [[1,1], [2,3], [4,2]]
+
+Oczekiwane wyjście: [3,0]
+
+2. Funkcja wyznaczająca brakujący wierzchołek trójkąta równobocznego na wykresie.
+
+Przykładowe wejście: [[1,1], [2,3]]
+
+Oczekiwane wyjście: [[x1,y1],[x2,y2]]  (trójkąt może mieć dwie opcje)
+
+3. Testy dla 1. i 2.
+
+
