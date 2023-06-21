@@ -62,9 +62,11 @@ chyba że jest ich za mało, wtedy wybrane osoby mogą wziąć dwie.
 `oblicz_koszty_pracodawcy`, testów nie może pisać ta sama osoba, 
 co pisała funkcje.
 
-- Napisz generator w pliku `generator.py`, który w folderze/katalodu 
+- ~~Napisz generator w pliku `generator.py`, który w folderze/katalodu 
 `data` wygenreuje plik csv `pracownicy.csv` z imieniem, nazwiskiem i pseudolosową pensją 
-z przedziału 1000 do 10000.
+z przedziału 1000 do 10000.~~ Generator nie jest obowiązkowy.
+Można wygenerować plik `data/pracownicy.py` ręcznie dla 3-5 wymyślonych 
+pracowników.
 
 - Zadeklaruj pętle, która będzie wczytywać dane z pliku 
 `data/pracownicy.csv` i kolejno wykonywać wszystkie funcje z klasy
