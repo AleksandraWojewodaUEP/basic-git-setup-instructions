@@ -6,7 +6,7 @@ Założenie konta na Githubie nie powinno stanowić wyzwania.
 Można założyć konto na maila prywatnego lub **uczelnianego**, jedyne co
 trzeba mieć na uwadze to ewentualne maile-notyfikacje. Jeśli ktoś posiada
 już konto na Githubie może podpiąć pod konto dodatkowego maila uczelnianego
-lub po porstu pracować na tym koncie bez zmian.
+lub po prostu pracować na tym koncie bez zmian.
 
 ## Instalacja Git
 
@@ -149,7 +149,7 @@ Przykładowy oczekiwany rezultat:
 
 Instalacja [Homebrew](https://brew.sh/) (komendę wklejamy do terminala).
 
-Instalacja:
+Instalacja Git za pomocą brew (homebrew):
 
 ```
 brew install git
@@ -331,21 +331,22 @@ Klucz powinien być widoczny w zakładcze `SSH keys`.
 ![Alt text](/imgs/new_repo_2.png)
 
 3. Po zatwierdzeniu nowego repozytorium na ekranie powinna znaleźć się informacja o `Quik setup`.
-**W niebieskiego pola wybierz opcję `SSH` (patrz screen)**. Skopiuj link do repozytorium z pola.
+**Z niebieskiego pola wybierz opcję `SSH` (patrz screen)**. Skopiuj link do repozytorium z pola.
 
 ![Alt text](/imgs/new_repo_2_1.png)
 
 4. Zamknij okno terminala i otwórz nowe.
 Przejdź do terminala/konsoli/emulatora. Przejdź do folderu/katalogu, w którym
 ma znajdować się repozytorium. 
-**UWAGA! Jeśli nie wiesz gdzie umieścić repozytorium to wróć do katalogu głównego
-za pomocą komendy `cd` i tam go umiejść. Nie w `.ssh/`!**
+**UWAGA! Nie umieszczaj repo w `.ssh/`!**
 Sklonuj repozytorium `git clone <link z niebieskiego pola>` 
 Podczas pobierania repozytorium może pojawić się zapytanie o nawiązanie połaczenia z nowym hostem. 
-Trzeba się na nie zgodzić, jesli chcemy pobrać repo, wpisując `yes`[^5] (patrz screen). 
+Jeśli chcemy pobrać repo, trzeba się na nie zgodzić wpisując `yes`[^5] (patrz screen). 
 Komendą `ls` można zobaczyć, czy repozytorium zostało poprawnie sklonowane.
 
 ![Ale text](/imgs/new_repo_3.png)
+
+Gratulacje! Twoje repo jest na Twojej maszynie.
 
 [^1]: *GNU General Public License* jest wirusową licencją open-sourcową, która zobowiązuje
 dostawców oprogramowania do dostarczenia kodu źródłowego oprogramowania użytkownikowi. 
