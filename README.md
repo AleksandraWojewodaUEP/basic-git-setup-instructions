@@ -1,8 +1,12 @@
-# Minimalistyczna instrukcja jak się zasetupować na zajęcia
+# Jak zacząć
 
 ## Założenie konta na [Githubie](https://github.com/)
 
-Założenie konta nie powinno stanowić dla Państwa problemu :).
+Założenie konta na Githubie nie powinno stanowić wyzwania. 
+Można założyć konto na maila prywatnego lub **uczelnianego**, jedyne co
+trzeba mieć na uwadze to ewentualne maile-notyfikacje. Jeśli ktoś posiada
+już konto na Githubie może podpiąć pod konto dodatkowego maila uczelnianego
+lub po porstu pracować na tym koncie bez zmian.
 
 ## Instalacja Git
 
@@ -15,7 +19,7 @@ Efektem oczekiwanym jest zainstalowany i działający Git.
 1. Pobranie [Gita dla Windowsa](https://git-scm.com/download/win).
 **64-bit Git fo Windows Setup**.
 
-2. Otwarcie pliku jeszcze z przeglądarki lub przejście do pobranego pliku za pomocą przeglądarki plików.
+2. Otwarcie pliku jeszcze z przeglądarki lub przejście do pobranego pliku za pomocą Przeglądarki Plików (Explorera).
 
 ![Alt text](/imgs/git_in_downloads.png "Optional titl")
 
@@ -35,7 +39,7 @@ Efektem oczekiwanym jest zainstalowany i działający Git.
 Wybór ten bezpośrednio zależy od preferencji użytkownika.
 
 - na zajęciach przez prowadzącego będzie wykorzystany głównie `vim` (wybór jak na screenie poniżej),
-jednak nie jest on wymagany przez prowadzącego,
+jednak nie jest on wymagany przez prowadzącego, nie jest to jednak rekomendowany wybór,
 - łatwiejszym (nieterminalowym) wyborem będzie `Notepad++` lub inny znany użytkownikowi edytor z
 listy wybieranej, 
 - czymś między `vim` a edytorem w okienku (np. `Notepad++`) będzie `nano`, polecany dla osób,
@@ -47,10 +51,6 @@ problemów, które mogą pojawić się na zajęciach.
 P.S. Uprzejmie przypominam, że to nie jest wybór na całe życie. Zawsze można zmienić domyślny edytor :).
 
 ![Alt text](/imgs/git_vim_4.png)
-
-"The only gym where it's possible to quit"
-
-![Alt text](/imgs/vim_meme.png "Znalezione w czeluściach r/linuxmeme")
 
 7. Wybór nazwy głównej gałeźni (z ang. `branch`). Jakiś czas temu dokonano przejścia z nazwy `master`
 na nazwę `main`. Wybór należy do użytkownika, jednak zgodnie z głównym nurtem będzie wybranie `main`. 
@@ -186,7 +186,7 @@ Ustawienie nazwy i maila użytkownika (komendy wpisujemy osobno, najpierw jedną
 
 ```
 git config --global user.name "Imię Nazwisko"
-git config --global user.email "niu@ue.poznan.pl"
+git config --global user.email "niu@student.ue.poznan.pl"
 ```
 
 W odpowiednich miejscach wpisz swoje dane. Przełącznik `--global` nie jest wymagany, 
@@ -194,10 +194,10 @@ szczególnie w przypadku wykorzystywania jednej maszyny dla wielu użytkowników
 Przykładowo użytkownik uczelniany, prywatny i służbowy.
 Można stworzyć konfigurację, która zezwala na odseparowanie od siebie kont Gitowych[^2].
 
-W przypadku ewentualnego błędu/literówki polecenie można wykonac ponownie.
+W przypadku ewentualnego błędu/literówki polecenie można wykonać ponownie.
 
 > **_Tip:_**  Będąc w terminalu (lub emulatorze terminala) strzałka w górę pozwala na przywołanie komend.
-Szczególnie przydatne, jeśli chcemy danej komendy użyć dwa razy lub komendy są od siebie nieznacznie róźne, 
+Szczególnie przydatne, jeśli chcemy danej komendy użyć dwa razy lub komendy są od siebie nieznacznie różne, 
 więc "nie opłaca" się jej przepisywać. 
 
 ![Alt text](/imgs/git_config_1.png)
@@ -213,10 +213,14 @@ W katalogu domowym jest ukryty[^3] plik `.gitconfig`.
 Do pliku można zajrzeć z poziomu terminala np.:
 
 - jedynie podgląd: komenda `cat .gitconfig` (komenda `cat` wyświetla zawartość danego pliku),
-- w trybie edycji: komenda `nano .gitconfig` (wyjście z programu ctrl + x) lub `vim .gitconfig` (vim w trybie
-wyświetlania, aby edytować wybierz i, aby wyjść z tryby edycji esc, aby wyść z programu wyjdź z trybu edycji
-esc, aby wyjść z niemodyfikowanego pliku 
-:q, z modyfikowanego, ale bez zapisu :q!, zapisz i wyjdź :wq),
+- w trybie edycji: komenda `nano .gitconfig` (wyjście z programu `ctrl + x`) lub `vim .gitconfig` 
+	- vim uruchomi się w trybie wyświetlania, 
+	- aby edytować wybierz `i`, 
+	- aby wyjść z tryby edycji `esc`, 
+	- aby wyjść z programu: wyjdź z trybu edycji `esc` następnie:
+		- aby wyjść z niemodyfikowanego pliku `:q` (dwukropek q), 
+		- aby wyjść z modyfikowanego, ale bez zapisu `:q!` (dwukropek q wykrzyknik), 
+		- aby zapisać zmiany i wyjść z vima `:wq` (dwukropek w q).
 
 > **_Tip:_** Wpisz do terminala `cat .gitc` i wciśniej tab. Nazwa pliku powinna samodzielnie się uzupełnić.
 Tab uzupełnia komendy/nazwy plików jeśli jest to możliwe.
@@ -252,7 +256,7 @@ Przez kolejne opcje także można przejść Enterem. Operacja zakończona powodz
 
 (Czy można podzielić się swoim `randomart image`?[^4])
 
-Klucze trzymane są w katalogu ukrytym[^3] `.ssh`. Można sprawdzić ich obecnośc przechodząc do katalogu 
+Klucze trzymane są w katalogu ukrytym[^3] `.ssh`. Można sprawdzić ich obecność przechodząc do katalogu 
 `.ssh`, który znajduje się w katalogu domowym (komenda sprawdzająca do katalogu domowego: `cd`).
 W katalogu `.ssh` wykonaj komendą `ls` (lub `ls -l` - wyświetl listę ze szczegółami,
 wtedy każdy plik jest w osobnej linii). W katalogu powinny znajdować się pliki `id_rsa` i `id_rsa.pub`.
@@ -283,7 +287,8 @@ jednak jak wcześniej wspomniano można to zmodyfikować[^2].
 W folderze powinny znajdować się klucze `id_rsa` i `id_rsa.pub`. **UWAGA! W nowszych Windowsach
 w explorerze plików nie widać rozszerzenia klucza publicznego, można go poznać po ikonce z małym
 `P`.** Najedź myszką na klucz publiczny i kliknij drugim przyciskiem myszki. `Otwórz za pomocą...`
-i wybierz edytor tekstu, np. Notatnik. Skopiuj zawartość (crtl + A, ctrl + C).
+i wybierz edytor tekstu, np. Notatnik. Skopiuj zawartość (crtl + A, ctrl + C) - **nie kopiuj ręcznie,
+istnieje wysokie prawdopodbieństwo, że któryś znak zostanie pominięty.**
 
 ![Alt text](/imgs/github_3.png)
 
@@ -330,14 +335,15 @@ Klucz powinien być widoczny w zakładcze `SSH keys`.
 
 ![Alt text](/imgs/new_repo_2_1.png)
 
-4. Przejdź do terminala/konsoli/emulatora. Przejdź do folderu/katalogu, w którym
+4. Zamknij okno terminala i otwórz nowe.
+Przejdź do terminala/konsoli/emulatora. Przejdź do folderu/katalogu, w którym
 ma znajdować się repozytorium. 
 **UWAGA! Jeśli nie wiesz gdzie umieścić repozytorium to wróć do katalogu głównego
 za pomocą komendy `cd` i tam go umiejść. Nie w `.ssh/`!**
 Sklonuj repozytorium `git clone <link z niebieskiego pola>` 
 Podczas pobierania repozytorium może pojawić się zapytanie o nawiązanie połaczenia z nowym hostem. 
-Trzeba się na nie zgodzić wpisując `yes` (patrz screen). Komendą `ls` można zobaczyć, czy repozytorium 
-zostało poprawnie sklonowane.
+Trzeba się na nie zgodzić, jesli chcemy pobrać repo, wpisując `yes`[^5] (patrz screen). 
+Komendą `ls` można zobaczyć, czy repozytorium zostało poprawnie sklonowane.
 
 ![Ale text](/imgs/new_repo_3.png)
 
@@ -349,3 +355,7 @@ się z prowadzącym.
 Nazwa pliku zawiera na przedzie `.`. Wpisz komendę `ls` (wylistuj pliki) w terminal, następnie wpisz
 komendę `ls -a` (wylistuj wszystkie pliki). W przypadku pierwszego ukryte pliki nie zostaną wyświetlone.
 [^4]: [Link](https://superuser.com/questions/1621434/can-you-publish-your-ssh-key-randomart)
+[^5]: Zgadzając się na pobranie kodu wykonywalnego powinniśmy być świadomi, że na daną maszynę 
+zostanie pobrany kod wykonywalny. Jeśli nie ufamy autrom kodu/nie znamy ich/mamy podejrzenia
+co do działania kody, że są one szkodliwe dla naszego komputera, nie zezwalajmy na takie połączenie.
+Proces można zakończyć negatywnie za pomocą `no` lub `ctrl + c` (zakończ komendę).
