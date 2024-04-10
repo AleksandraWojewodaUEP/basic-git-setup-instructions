@@ -39,16 +39,16 @@ Efektem oczekiwanym jest zainstalowany i działający Git.
 Wybór ten bezpośrednio zależy od preferencji użytkownika.
 
 - na zajęciach przez prowadzącego będzie wykorzystany głównie `vim` (wybór jak na screenie poniżej),
-jednak nie jest on wymagany przez prowadzącego, nie jest to jednak rekomendowany wybór,
+jednak nie jest on wymagany przez prowadzącego, **nie jest to rekomendowany edytor**,
 - łatwiejszym (nieterminalowym) wyborem będzie `Notepad++` lub inny znany użytkownikowi edytor z
 listy wybieranej, 
-- czymś między `vim` a edytorem w okienku (np. `Notepad++`) będzie `nano`, polecany dla osób,
-które chcą edytor w terminalu, ale `vim` im (jeszcze :) ) nie odpowiada. 
+- czymś przyjemniejszym od `vim`, ale nadal terminalowym jest `nano` - rekomendowane dla osób 
+chcących przygody z terminalem.
 
-Prowadzący w miarę mozliwości czasowych na zajęciach będzie wspierał wszystkie 3 opcję w przypadku 
+Prowadzący w miarę możliwości czasowych na zajęciach będzie wspierał wszystkie 3 opcję w przypadku 
 problemów, które mogą pojawić się na zajęciach.
 
-P.S. Uprzejmie przypominam, że to nie jest wybór na całe życie. Zawsze można zmienić domyślny edytor :).
+P.S. Uprzejmie przypominam, że to nie jest wybór na całe życie. Zawsze można zmienić domyślny edytor :)
 
 ![Alt text](/imgs/git_vim_4.png)
 
@@ -63,7 +63,7 @@ Na zajeciach przykłady będą wykorzystywały `main` jako główną gałąź.
 - na zajęciach prezentowane będą opcje, które wymagają także uniksowych narzędzi (tak jak na screenie),
 - pozostałe opcje pozwolą przejść przez ćwiczenia na zajęciach, także opcja wybrana na screenie nie jest
 opcją obowiązkową,
-- opcja `Use Git from Bash only` jest szczególnie polecana, jeśli użytkownik chce nie ingerować w `PATH`.
+- opcja `Use Git from Bash only` jest szczególnie polecana, jeśli użytkownik nie chce ingerować w `PATH`.
 
 ![Alt text](/imgs/git_path_6.png)
 
@@ -113,6 +113,8 @@ domyślne (screeny poniżej). Użytkownik może dobrać dodatkowe konfiguracje w
 #### Podsumowanie
 
 Gratulację! Na Twoim Windowsie jest Git.
+
+Nie jesteś 
 
 ### Dla systemu Ubuntu/Debian
 
