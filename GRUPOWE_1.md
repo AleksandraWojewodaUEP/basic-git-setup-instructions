@@ -88,6 +88,11 @@ Później, ale przed zajęciami w 1. tygodniu kwietnia: -2 pkt dla każdego.
 
 Później: 0 pkt.
 
+## Deadline - zaoczni 
+
+Za wykonanie zdania do dnia następnego spotkania w ramach IO (włącznie):
+max punktowy.
+
 ## Zadania cz. 1
 
 ### Zadanie 1 [piśmienne] [1 pkt wspólnie]
