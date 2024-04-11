@@ -122,35 +122,3 @@ Oczekiwane wyjście:
     "knut" : 13
 }
 ```
-
-### Zadanie 5 - programistyczne
-
-W pliku main.py zaprogramuj funkcję `waluta_dict_na_str`, 
-która przyjmie słownik informujący o wielkości funduszu po jego przeliczeniu na monety o największym nominale i przepisze na cenę.
-* jeśli wartość jakiegoś bilonu jest zerowa, pomiń ją,
-* wersja łatwiejsza: nie musisz odmieniać słów ~~knutów, knuty, sykle, sykli, galeony itd.~~ 
-możesz zostać przy knut, sykl, galeon
-
-Przykładowe wejścia:
-```python
-{
-    "galeon" : 0,
-    "sykl" : 0,
-    "knut" : 13
-}
-
-{
-    "galeon" : 17,
-    "sykl" : 2,
-    "knut" : 13
-}
-```
-
-Oczekiwane wyjścia:
-```python
-"13 knut"
-
-"17 galeon 2 sykl 13 knut"
-```
-
-* **nie umieszaj spacji na początku ani na końcu ciągu wyjściowego**
