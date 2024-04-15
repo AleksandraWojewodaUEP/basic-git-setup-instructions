@@ -59,7 +59,7 @@ Zakazane praktyki przekreśl, zaś nazwy gałęzi lub strukturę nazwy gałęzi 
 
 W pliku main.py zaprogramuj funkcję `wyslij_sowe`, 
 która przyjmuje dwa ciągi znaków: 
-adresata, treść listu, funkcja ma wyświetlać (print) informację o wysłaniu sowy,
+adresata, treść listu, funkcja ma wyświetlać (`print`) informację o wysłaniu sowy,
 odczekać 1 sekundę i zwrócić `True`,
 jeśli operacja się powiodła lub `False`, jeśli się nie powiodła. 
 Operację zrandomizuj `True` ma wypadać w 85%, zaś `False` w 15%. 
