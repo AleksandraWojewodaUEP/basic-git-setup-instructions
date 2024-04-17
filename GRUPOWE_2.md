@@ -7,7 +7,6 @@ Dołączamy listę niezbędnych książek i wyposażenia.
 
 Rok szkolny - semestr Grupowe_2 rozpoczyna się 11 kwietnia lub 17 kwietnia zależnie od grupy. 
 Oczekujemy Państwa potwierdzenie commitem nie później niż 
-
 dla grupy środowej: 23 kwietnia
 dla grupy czwartkowej: 17 kwietnia
 
@@ -43,7 +42,8 @@ Proszę wprowadzić Tiarę Przydziału.
 ## Organizacja domu
 
 Proszę o wyłonienie prefekta, ustalenie wspólnej techniki przydzielania zadań i nazewnictwa gałęzi.
-Prefekt musi stworzyć forka wskazanego repozytorium (zaklęcie duplikujące).
+Prefekt musi stworzyć forka [wskazanego repozytorium](https://github.com/AleksandraWojewodaUEP/io_grupowe_2_hp) 
+(zaklęcie duplikujące).
 Każde zadanie ma zostać zrealizowane na odrębnej gałęzi, po zakończeniu zadania, wystawiamy PR.
 
 ## Część I
@@ -110,7 +110,7 @@ potwierdzenie odbioru, odległość, typ, specjalna.
 | dalekobieżna  | 20 knutów | 2 sykle 1 knut |
 
 * potwierdzenie odbioru +7 knutów
-* dla opcji specjalna: wyjec --> +4 knuty, list gończy --> +1 sykl
+* dla opcji specjalna: wyjec &rarr; +4 knuty, list gończy &rarr; +1 sykl
 * **nie używaj w kodzie polskich znaków**
 
 Przykładowe wywołanie:
@@ -210,19 +210,19 @@ Jeśli nie ma zadania 5 na `main` należy zainicjalizować funkcję wydmuszkę.*
 
 W pliku main.py zaprogramuj funkcję `nadaj_sowe`, 
 która przyjmie następujące dane wejściowe:
-* adresat --> str
-* tresc wiadomosci --> str
-* potwierfdzenie odbioru --> True/False
-* odleglosc --> lokalna/krajowa/dalekobieżna
-* typ --> list/paczka
-* specjalna --> nie dotyczy/wyjec/list gończy
+* adresat &rarr; str
+* tresc wiadomosci &rarr; str
+* potwierfdzenie odbioru &rarr; True/False
+* odleglosc &rarr; lokalna/krajowa/dalekobieżna
+* typ &rarr; list/paczka
+* specjalna &rarr; nie dotyczy/wyjec/list gończy
 
 Za pomocą funkcji `wybierz_sowe_zwroc_koszt` oblicz koszt sowy, który 
 Następnie do pliku `poczta_nadania_lista.csv` dopisz nowy wiersz z następującymi danymi:
-* adresat --> str
-* treść wiadomości --> str
-* koszt przesyłki --> oblicz za pomocą funkcji `wybierz_sowe_zwroc_koszt`, a następnie przekonwertuj na ciag znaków za pomocą funkcji `waluta_dict_na_str`
-* potwierdzenie odbioru --> True/False, gdzie True ma być zapisane jako TAK, zaś False jako NIE
+* adresat &rarr; str
+* treść wiadomości &rarr; str
+* koszt przesyłki &rarr; oblicz za pomocą funkcji `wybierz_sowe_zwroc_koszt`, a następnie przekonwertuj na ciag znaków za pomocą funkcji `waluta_dict_na_str`
+* potwierdzenie odbioru &rarr; True/False, gdzie True ma być zapisane jako TAK, zaś False jako NIE
 
 **Funkcja ma nic nie zwracać (brak `return`).**
 
