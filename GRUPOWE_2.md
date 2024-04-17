@@ -203,4 +203,28 @@ Oczekiwane wyjścia:
 }
 ```
 
+### Zadanie 7 - programistyczne
+
+**UWAGA! Zadanie wymaga zadania 5! 
+Jeśli nie ma zadania 5 na `main` należy zainicjalizować funkcję wydmuszkę.**
+
+W pliku main.py zaprogramuj funkcję `nadaj_sowe`, 
+która przyjmie następujące dane wejściowe:
+* adresat --> str
+* tresc wiadomosci --> str
+* potwierfdzenie odbioru --> True/False
+* odleglosc --> lokalna/krajowa/dalekobieżna
+* typ --> list/paczka
+* specjalna --> nie dotyczy/wyjec/list gończy
+
+Za pomocą funkcji `wybierz_sowe_zwroc_koszt` oblicz koszt sowy, który 
+Następnie do pliku `poczta_nadania_lista.csv` dopisz nowy wiersz z następującymi danymi:
+* adresat --> str
+* treść wiadomości --> str
+* koszt przesyłki --> oblicz za pomocą funkcji `wybierz_sowe_zwroc_koszt`, a następnie przekonwertuj na ciag znaków za pomocą funkcji `waluta_dict_na_str`
+* potwierdzenie odbioru --> True/False, gdzie True ma być zapisane jako TAK, zaś False jako NIE
+
+**Funkcja ma nic nie zwracać (brak `return`).**
+
+
 
