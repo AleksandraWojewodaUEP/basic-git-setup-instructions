@@ -2,15 +2,19 @@
 
 <em>Szanowna Pani / Szanowny Panie,
 
-Mamy przyjemność poinformowania Pani/Pana, że został(a) Pan(i) przyjęty/a do Szkoły Magii i Czarodziejstwa Hogwart. Dołączamy listę niezbędnych książek i wyposażenia.
+Mamy przyjemność poinformowania Pani/Pana, że został(a) Pan(i) przyjęty/a do Szkoły Magii i Czarodziejstwa Hogwart. 
+Dołączamy listę niezbędnych książek i wyposażenia.
 
-Rok szkolny - semestr Grupowe_2 rozpoczyna się 11 kwietnia lub 17 kwietnia zależnie od grupy. Oczekujemy Państwa potwierdzenie commitem nie później niż 
+Rok szkolny - semestr Grupowe_2 rozpoczyna się 11 kwietnia lub 17 kwietnia zależnie od grupy. 
+Oczekujemy Państwa potwierdzenie commitem nie później niż 
 
 dla grupy środowej: 23 kwietnia
 dla grupy czwartkowej: 17 kwietnia
 
 Z wyrazami szacunku,
+
 Aleksandra Wojewoda
+
 Nauczyciel IO
 
 
