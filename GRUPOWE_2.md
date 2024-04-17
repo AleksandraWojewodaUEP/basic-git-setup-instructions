@@ -127,6 +127,13 @@ Oczekiwane wyjście:
 }
 ```
 
+### Checkpoint 1! - Grupa czwartkowa dzienni03
+
+Wszystkie gałęzie mają trafić na gałąź główną. 
+Do rozwiązania konfliktów można wykorzystać narzędzia wbudowane np. w IDE PyCharm 
+lub dodatkowe pluginy dla VSC. 
+Można wykorzystać zwykły edytor tekstu lub konsolowy edytor tekstu (np. `vim`).
+
 ### Zadanie 5 - programistyczne
 
 W pliku main.py zaprogramuj funkcję `waluta_dict_na_str`, 
@@ -158,6 +165,13 @@ Oczekiwane wyjścia:
 ```
 
 * **nie umieszaj spacji na początku ani na końcu ciągu wyjściowego**
+
+### Checkpoint 1! - Grupa środowa dzienni02
+
+Wszystkie gałęzie mają trafić na gałąź główną. 
+Do rozwiązania konfliktów można wykorzystać narzędzia wbudowane np. w IDE PyCharm 
+lub dodatkowe pluginy dla VSC. 
+Można wykorzystać zwykły edytor tekstu lub konsolowy edytor tekstu (np. `vim`).
 
 ### Zadanie 6 - programistyczne
 
