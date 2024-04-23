@@ -47,7 +47,7 @@ Każde zadanie ma zostać zrealizowane na odrębnej gałęzi, po zakończeniu za
 
 ### Zadanie 1 - piśmienne
 
-W pliku README.md napisz jaki dom reprezentujecie. 
+W pliku README.md napisz jaki dom reprezentuje zespół. 
 Umieść przynajmniej jeden obraz, który będzie przetrzymywany w katalogu/folderze `imgs/`.
 Umieść listę uczestników domu, ale tak, aby zawierały linki do ich kont na Githubie.
 Umieść informacje dot. zasad współpracy.
