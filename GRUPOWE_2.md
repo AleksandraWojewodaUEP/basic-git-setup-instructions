@@ -227,4 +227,26 @@ Następnie do pliku `poczta_nadania_lista.csv` dopisz nowy wiersz z następując
 **Funkcja ma nic nie zwracać (brak `return`).**
 
 
+### Zadanie 8 - programistyczne 
 
+W pliku main.py zaprogramuj funkcję `poczta_wyslij_sowy`, 
+która będzie przyjmować ścieżkę do pliku `.csv`, 
+gdzie będą występować następujące kolumny:
+* adresat &rarr; str
+* treść wiadomości &rarr; str
+* koszt przesyłki 
+* potwierdzenie odbioru &rarr; TAK/NIE
+
+Następnie wyślij sowy z listy za pomocą funkcji `wyslij_sowe`.
+* Jeśli sowa doleciała, policz koszt zgodnie z taryfą z kolumny koszt przesyłki.
+* Jeśli sowa nie doleciała:
+  * potwierdzenie odbioru = TAK → wyzeruj koszt (klient nie płaci),
+  * potwierdzenie odbioru = NIE → policz koszt zgodnie z taryfą z kolumny koszt przesyłki.
+
+Następnie zapisz rezultat w pliku, którego nazwa będzie miała następujący schemat 
+`output_sowy_z_poczty_dzien_miesiac_rok.csv` i następujące kolumny:
+* adresat, 
+* tresc wiadomosci, 
+* koszt przesylki, 
+* potwierdzenie odbioru, 
+* rzeczywisty koszt.
