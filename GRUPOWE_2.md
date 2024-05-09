@@ -250,3 +250,75 @@ Następnie zapisz rezultat w pliku, którego nazwa będzie miała następujący 
 * koszt przesylki, 
 * potwierdzenie odbioru, 
 * rzeczywisty koszt.
+
+
+
+## Tagi
+
+Tag dla repozytorium Git jest trochę jak kolorowe karteczki z zaznaczeniem jakiegoś 
+ważnego/ulubionego fragmentu. 
+Jest to swego rodzaju wskaźnik na dany moment w historii repozytorium, 
+w odróżnieniu od gałęzi (analogicznie zakładka w książce) nie przesuwa się w ramach
+postępu w tworzeniu oprogramowania (czytania książki).
+
+Tag służy do oznaczenia wersji oprogramowania.
+Zwykle oznaczenia są dwu lub trzyelementowe tj. `v0.1` lub `v2.17.3`.
+Przy czym składniki liczbowe wersji traktuje się od najważniejszego do najmniej ważnego.
+Czy dla `v.2.17.3` ogólnie będzie można powiedzieć, że jest to wersja druga oprogramowania,
+na dalszym planie będzie 17, a na końcu 3.
+
+W Git rozróżnia się dwa rodzaje tagów: 
+* tag lekki (ang. *lightweight tag*) - zajmuje mniej miejsca w repozytorium i nie przetrzymuje dodatkowych
+metadanych, jest po prostu wskaźnikiem na danego commita,
+* tag adnotowany (ang. *annotated tag*) - zajmuje więcej miejsca i przetrzymuje metadane.
+
+Podstawowe komendy ułatwiające pracę z tagami:
+* `git tag` - wyświetl listę tagów, 
+* `git tag -l v0.2*` - wyświetli wszystkie tagi, rozpoczynające się od v0.2,
+* `git tag -a v0.1 -m "Widamość dla taga"` - stworzenie taga adnotowanego
+  (przełącznik `-a`),
+* `git tag v0.1` - stworzenie taga lekkiego.
+
+Więcej do poczytania o tagach można znaleźć w [oficjalnej dokumentacji](https://git-scm.com/book/en/v2/Git-Basics-Tagging).
+
+## Przepływ pracy (??? ang. *workflow*)
+
+*Workflow* na Githubie jest konfigurowalnym zautomatyzowanym procesem, który uruchamia określoną liczbę zadań do wykonania.
+
+Takie automatyczne procesy mają zapewnić poprawne działanie kodu i jego automatyczne sprawdzenie. 
+Zadania mogą także automatycznie generować dalsze pożądane zachowania np. wygenerowanie dokumentu (artefaktu).
+
+Workflow tworzone dą w formacie YAML w specjalnym folderze/katalogu `.github/workflows/`.
+
+Przykładowy plik konfigurujący zautomatyzowany proces może wyglądać następująco:
+```yaml
+# Komentarz 
+
+name: Python application
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v4
+    - name: Ola test
+      run: python ola.py
+```
+
+W ramach pliku powyżej zdefiniowano proces (o nazwie *Python application*) z jednym zadaniem (*job*) z jednym krokiem (*step*).
+Proces będzie się wykonywał na najnowszym obrazie Ubuntu z odpowiednimi zgodami. 
+Będzie się wykonywał tylko dla gałęzi `main` oraz dla PR do gałęzi `main`.
+W ramach kroku, który nazywa się *Ola test* będzie wywoływany skrypt `ola.py` za pomocą `python`.
+
+Zadaniem w ramach zajęć jest przywitanie się z prefektem domu.
