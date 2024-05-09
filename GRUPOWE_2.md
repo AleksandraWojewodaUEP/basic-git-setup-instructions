@@ -277,7 +277,8 @@ Podstawowe komendy ułatwiające pracę z tagami:
 * `git tag -l v0.2*` - wyświetli wszystkie tagi, rozpoczynające się od v0.2,
 * `git tag -a v0.1 -m "Widamość dla taga"` - stworzenie taga adnotowanego
   (przełącznik `-a`),
-* `git tag v0.1` - stworzenie taga lekkiego.
+* `git tag v0.1` - stworzenie taga lekkiego,
+* `git push origin v0.1` - wypchnięcie taga.
 
 Więcej do poczytania o tagach można znaleźć w [oficjalnej dokumentacji](https://git-scm.com/book/en/v2/Git-Basics-Tagging).
 
