@@ -47,6 +47,33 @@ po zakończeniu zadania, wystawiamy PR.
 Ktoś inny musi zatwierdzić PR swoim komentarzem lub żądaniem zmian. 
 Po poprawkach gałąź może zostać złączona do gałęzi pomocniczej `staging`.
 
+### PR i kontrola kodu
+
+#### Programowanie 
+
+1. Przejście na nową gałąź zadania `git checkout -b <nazwa nowej gałęzi>`.
+2. Zrobienie zadania lub jego części.
+3. Wypchnięcie zadania `git push` lub jeśli jest to pierwszy push z danej gałęzi `git push --set-upstream origin <nazwa gałęzi>`.
+
+#### Wystawienie PR
+
+1. Wejście w repo na Githubie. 
+2. Wejście w zakładkę *Pull requstes*. 
+3. Wejście w *New pull request*.
+4. Wybranie odpowiednich gałęzi do scalenia.
+Poniżej przedstawiono dwa obrazki obrazujące wystawianie PR. 
+Dopilnuj, aby wystawić PR do swojego repozytorium. 
+PR ma doprowadzić do scalenia zmian z Twojego zadania programistycznego/piśmiennego na `staging`, 
+a w ostatecznym rezultacie na `main`.
+![wrong pr](/imgs/pr_wrong.png)
+![good pr](/imgs/pr_good.png) 
+
+#### Akceptacja PR
+
+1. Znalezienie recenzenta (ang. *reviewer*) kodu w ramach zespołu. 
+2. Jeśli recenzent wskaże miejsca do poprawy, należy je poprawić i ponownie prosić recenzenta o opinie (powtarzać aż do skutku).
+3. Jeśli recenzent zaakceptował zmiany, należy je scalić (można "wyklikać" w Githubie lub zrobić to z poziomu lokalnego workspace).
+
 ## Część I - Tag v 1.0 Hedwiga
 
 Następujące zadania należy zrobić pod tagiem. 
@@ -245,3 +272,38 @@ Następnie zapisz rezultat w pliku, którego nazwa będzie miała następujący 
 * koszt przesylki, 
 * potwierdzenie odbioru, 
 * rzeczywisty koszt.
+
+## Z staging na main
+
+Po wykonaniu zadań, jeśli trafią na `staging`, można scalić je na `main` i otagować zgodnie z poleceniem. 
+
+## Tagi
+
+Tag dla repozytorium Git jest trochę jak kolorowe karteczki z zaznaczeniem jakiegoś 
+ważnego/ulubionego fragmentu. 
+Jest to swego rodzaju wskaźnik na dany moment w historii repozytorium, 
+w odróżnieniu od gałęzi (analogicznie zakładka w książce) nie przesuwa się w ramach
+postępu w tworzeniu oprogramowania (czytania książki).
+
+Tag służy do oznaczenia wersji oprogramowania.
+Zwykle oznaczenia są dwu lub trzyelementowe tj. `v0.1` lub `v2.17.3`.
+Przy czym składniki liczbowe wersji traktuje się od najważniejszego do najmniej ważnego.
+Czy dla `v.2.17.3` ogólnie będzie można powiedzieć, że jest to wersja druga oprogramowania,
+na dalszym planie będzie 17, a na końcu 3.
+
+W Git rozróżnia się dwa rodzaje tagów: 
+* tag lekki (ang. *lightweight tag*) - zajmuje mniej miejsca w repozytorium i nie przetrzymuje dodatkowych
+metadanych, jest po prostu wskaźnikiem na danego commita,
+* tag adnotowany (ang. *annotated tag*) - zajmuje więcej miejsca i przetrzymuje metadane.
+
+Podstawowe komendy ułatwiające pracę z tagami:
+* `git tag` - wyświetl listę tagów, 
+* `git tag -l v0.2*` - wyświetli wszystkie tagi, rozpoczynające się od v0.2,
+* `git tag -a v0.1 -m "Widamość dla taga"` - stworzenie taga adnotowanego
+  (przełącznik `-a`),
+* `git tag v0.1` - stworzenie taga lekkiego,
+* `git push origin v0.1` - wypchnięcie taga.
+
+Taga można stworzyć zarówno z poziomu workspace, jak i "wyklikać" w Githubie.
+
+Więcej do poczytania o tagach można znaleźć w [oficjalnej dokumentacji](https://git-scm.com/book/en/v2/Git-Basics-Tagging).
