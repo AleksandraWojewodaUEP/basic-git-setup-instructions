@@ -55,6 +55,15 @@ Po poprawkach gałąź może zostać złączona do gałęzi pomocniczej `staging
 2. Zrobienie zadania lub jego części.
 3. Wypchnięcie zadania `git push` lub jeśli jest to pierwszy push z danej gałęzi `git push --set-upstream origin <nazwa gałęzi>`.
 
+#### Przed PR (nieobowiązkowe, rekomendowane)
+
+Warto przed PR się scalić z stagingiem. 
+1. Upewnij się, że na swojej maszynie (komputerze) masz najnowszy `staging`. 
+Jeśli nie masz - `git checkout staging` i `git pull`. 
+2. Przejdź na gałąź zadania `git checkout <nazwa gałeżi zadania>`.
+3. Scal zmiany z `staging` do siebie - `git merge staging` ("zaproś" `staging` do siebie).
+4. Wypchnij zmiany - `git push`.
+
 #### Wystawienie PR
 
 1. Wejście w repo na Githubie. 
