@@ -72,12 +72,12 @@ Operację zrandomizuj `True` ma wypadać w 85%, zaś `False` w 15%.
 
 W pliku main.py zaprogramuj funkcję `licz_sume`, 
 która ma przyjmować słownik, w którym mogą występować następujące klucze: 
-geleon, sykl, knut. 
+galeon, sykl, knut. 
 Dla każdego z kluczy wartość będzie reprezentowana przez listę, 
 wskazującą na ilość monet danego rodzaju w jednym stosie. 
 Funkcja ma zwracać słownik informujący o wielkości funduszu po jego przeliczeniu 
 na monety o największym nominale. 
-Przy czym 1 geleon = 17 sykli, 1 sykl = 21 knutów.
+Przy czym 1 galeon = 17 sykli, 1 sykl = 21 knutów.
 
 Przykładowe wejście:
 ```python
@@ -164,7 +164,7 @@ Oczekiwane wyjścia:
 "17 galeon 2 sykl 13 knut"
 ```
 
-* **nie umieszaj spacji na początku ani na końcu ciągu wyjściowego**
+* **nie umieszczaj spacji na początku ani na końcu ciągu wyjściowego**
 
 ### Checkpoint 1! - Grupa środowa dzienni02
 
@@ -178,7 +178,7 @@ Można wykorzystać zwykły edytor tekstu lub konsolowy edytor tekstu (np. `vim`
 W pliku main.py zaprogramuj funkcję `waluta_str_na_dict`, 
 która przyjmie ciąg znaków i przepisze na cenę w słowniku.
 * jeśli wartość jakiegoś bilonu jest zerowa, mimo to umieść klucz w słowniku,
-* podpowiedź: podziel ciąg po spacji, co drugi ciąg traktuj jak klucz, jeśłi zaczyna się na `g` uznaj to za galeon, 
+* podpowiedź: podziel ciąg po spacji, co drugi ciąg traktuj jak klucz, jeśli zaczyna się na `g` uznaj to za galeon, 
 jeśli na `s` jako sykl, jeśli na `k` jako knut.
 * 
 Przykładowe wejścia:
@@ -212,7 +212,7 @@ W pliku main.py zaprogramuj funkcję `nadaj_sowe`,
 która przyjmie następujące dane wejściowe:
 * adresat &rarr; str
 * tresc wiadomosci &rarr; str
-* potwierfdzenie odbioru &rarr; True/False
+* potwierdzenie odbioru &rarr; True/False
 * odleglosc &rarr; lokalna/krajowa/dalekobieżna
 * typ &rarr; list/paczka
 * specjalna &rarr; nie dotyczy/wyjec/list gończy
