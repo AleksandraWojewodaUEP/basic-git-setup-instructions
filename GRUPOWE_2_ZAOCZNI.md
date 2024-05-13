@@ -62,7 +62,7 @@ Po poprawkach gałąź może zostać złączona do gałęzi pomocniczej `staging
 3. Wejście w *New pull request*.
 4. Wybranie odpowiednich gałęzi do scalenia.
 Poniżej przedstawiono dwa obrazki obrazujące wystawianie PR. 
-Dopilnuj, aby wystawić PR do swojego repozytorium. 
+Dopilnuj, aby wystawić PR do swojego repozytorium, **NIE** do repozytorium prowadzącej. 
 PR ma doprowadzić do scalenia zmian z Twojego zadania programistycznego/piśmiennego na `staging`, 
 a w ostatecznym rezultacie na `main`.
 ![wrong pr](/imgs/pr_wrong.png)
