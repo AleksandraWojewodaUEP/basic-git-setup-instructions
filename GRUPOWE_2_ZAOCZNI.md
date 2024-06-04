@@ -316,3 +316,65 @@ Podstawowe komendy ułatwiające pracę z tagami:
 Taga można stworzyć zarówno z poziomu workspace, jak i "wyklikać" w Githubie.
 
 Więcej do poczytania o tagach można znaleźć w [oficjalnej dokumentacji](https://git-scm.com/book/en/v2/Git-Basics-Tagging).
+
+
+## GitHub Actions workflows
+
+Jednym z najłatwiejszych sposobów weryfikacji jakości kodu jest ich automatyczne sprawdzanie. 
+Można spotkać się z wieloma sposobami na automatyzowanie zadań, 
+tym które będziemy wykorzystywać na zajęciach będzie usługa Github Actions.
+Służy ona automatyzacji zadań w repozytoriach git.
+Github Actions umożliwia tworzenie i uruchamianie przypływów pracy (ang. *workflows*), 
+które mogą wykonywać określoną pracę po spełnieniu określonych warunków.
+Może to być nowy commit lub wygenerowanie nowej PR.
+Korzystanie z tego typu automatyzacji wspiera ciągłą integrację i ciągłe dostarczanie (CI/CD).
+Co w konsekwencji prowadzi do przyśpieszenia i ulepszenia procesu dostarczania,
+ale też dbania o jego jakość.
+
+Przykładowy przepływ pracy realizowany na zajęciach witał się z prefektem w zespole.
+
+Aby go stworzyć, tworzyliśmy plik `hello.py`, który zawierał linię kodu:
+```python
+print("Hello Ola")
+```
+Następnie tworzyliśmy przepływ pracy w folderze/katalogu: `.github/workflows/` w pliku `hello.yml`.
+Przepływ wyglądał następująco:
+```yaml
+name: Przywitanie z prefektem
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v4
+    - name: Set up Python 3.10
+      uses: actions/setup-python@v3
+      with:
+        python-version: "3.10"
+    - name: Powitanie
+      run: python hello.py
+```
+W pliku deklarowano nazwę, następnie na jakie akcje operacje mają się wykonać automatycznie.
+W tym przypadku było to na nowy commit oraz na PR w obu przypadkach jedynie dla gałęzi `main`. 
+Następnie ustawiono odpowiednie zgody i zdefiniowano `jobs`.
+`jobs` odpalane są na najnowszym Ubuntu z Pythonem w wersji 3.10.
+Ostatnim elementem jest wywołanie pliku `hello.py`.
+
+Na koniec projektu grupy zobowiązane są do stworzenia podstawowych testów dla zadań w projekcie 
+i automatyczne ich uruchamiania dla każdego nowego commita i PR na gałęzi głównej (najczęściej *main*).
+Każdy użytkownik ma napisać testy (jeden lub wiele) do jednej funkcji zadania z części programistycznej.
+Do testów można wykorzystać `assert`.
+Testy można napisać w jednym pliku np. `tests.py` lub osobno dla każdego użytkownika.
+Następnie należy zdefiniować nowego yaml'a z automatycznym ich uruchomieniem.
+Testy powinny kończyć się ich poprawnym (na zielono) wykonaniem.
